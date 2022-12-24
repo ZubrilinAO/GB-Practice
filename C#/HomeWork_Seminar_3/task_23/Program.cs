@@ -10,5 +10,12 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 for (int i = 1; i <= num; i++)
 {
-    System.Console.Write(Math.Pow(i, 3) + " ");
+    if (i != num)
+    {
+        System.Console.Write(Math.Pow(i, 3) + ", ");
+    }
+    else
+    {
+        System.Console.Write(Math.Pow(i, 3));
+    }
 }
