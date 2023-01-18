@@ -3,7 +3,7 @@
 [345, 897, 568, 234] -> 2
 */
 
-int[] array = GetArray(6, 100, 999);
+int[] array = GetArray(4, 100, 999);
 Console.WriteLine($"Количество чётных чисел в массиве [{string.Join(", ", array)}] равно {GetCountEvenNumbers(array)}");
 
 //--------------Методы--------------
