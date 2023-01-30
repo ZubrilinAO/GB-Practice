@@ -31,7 +31,7 @@ PrintArray(matrixB);
 if (CheckMultMatrix(matrixA, matrixB))
 {
     Console.WriteLine("Произведение матриц: ");
-    PrintArray(MatrixЬultiplication(matrixA, matrixB));
+    PrintArray(MatrixMultiplication(matrixA, matrixB));
 }
 else Console.WriteLine("Количество столбцов первой матрицы не равно количеству строк второй матрицы.");
 
@@ -62,7 +62,7 @@ void PrintArray(int[,] array)
     }
 }
 
-int[,] MatrixЬultiplication(int[,] matrixA, int[,] matrixB)
+int[,] MatrixMultiplication(int[,] matrixA, int[,] matrixB)
 {
     int[,] result = new int[matrixA.GetLength(0), matrixB.GetLength(1)];
 
