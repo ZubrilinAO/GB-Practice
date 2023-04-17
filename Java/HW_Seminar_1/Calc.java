@@ -8,7 +8,7 @@ package HW_Seminar_1;
 Выберите операцию
 1 - сложить
 2 - умножить
- */
+*/
 
 import java.util.Scanner;
 
