@@ -3,7 +3,7 @@ package HW_1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Programm {
+public class Program {
     public static void main(String[] args) {
         Product chocolate1 = new Chocolate("Nestle", "Dark chocolate", 5.0, 150);
         Product chocolate2 = new Chocolate("Hershey's", "Milk chocolate", 4.0, 100);
