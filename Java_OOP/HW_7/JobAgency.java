@@ -19,12 +19,17 @@ public class JobAgency implements Publisher {
 
     @Override
     public void sendOffer(String companyName, Vacancy vacancy) {
+        List<Observer> observersToRemove = new ArrayList<>();
         for (Observer observer : observers) {
             Worker worker = (Worker) observer;
             if (worker.vacancyType.equals(vacancy.getType())) {
                 observer.receiveOffer(companyName, vacancy);
+                Vacancy matchedJob = worker.getMatchedJob();
+                if (matchedJob != null) {
+                    observersToRemove.add(observer);
+                }
             }
-
         }
+        observers.removeAll(observersToRemove);
     }
 }

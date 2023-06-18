@@ -31,10 +31,10 @@ public class Program {
         jobAgency.registerObserver(sidorov);
         jobAgency.registerObserver(gordeev);
 
-        for (int i = 0; i < 10; i++) {
-            geekBrains.needEmployee("DevOps Engineer", VacancyType.FULL_TIME, random.nextDouble(3000, 70000));
+        for (int i = 0; i < 15; i++) {
+            geekBrains.needEmployee("DevOps Engineer", VacancyType.FULL_TIME, random.nextDouble(3000, 80000));
             google.needEmployee("Mobile Developer", VacancyType.PRACTICE, random.nextDouble(3000, 100000));
-            yandex.needEmployee("DevOps Engineer", VacancyType.INTERSHIP, random.nextDouble(3000, 120000));
+            yandex.needEmployee("Manager", VacancyType.INTERSHIP, random.nextDouble(3000, 120000));
         }
     }
 }

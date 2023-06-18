@@ -8,7 +8,6 @@ public class Company {
 
     public Company(String companyName, Publisher jobAgency) {
         this.companyName = companyName;
-
         this.jobAgency = jobAgency;
     }
 
