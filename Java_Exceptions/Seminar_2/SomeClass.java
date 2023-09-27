@@ -21,7 +21,7 @@ public class SomeClass {
         } catch (Throwable e) {
             e.printStackTrace();
         } finally {
-            System.out.println("Я всеравно выполнился!");
+            System.out.println("Я все равно выполнился!");
         }
         System.out.println("Я жив");
     }
